@@ -87,7 +87,7 @@ export function ContactForm() {
       const response = await fetch(submitUrl, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "text/plain",
           Accept: "application/json"
         },
         body: JSON.stringify(sheetPayload)
