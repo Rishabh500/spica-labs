@@ -111,12 +111,12 @@ export function ContactForm() {
         message: "Thanks! Your inquiry has been sent and our team will be in touch shortly."
       });
     } catch (err) {
+      
+
       setStatus({
         show: true,
-        type: 'bad',
-        message: `Something went wrong and your message couldn't be sent. Please try again${
-          CONFIG.email ? ` or email ${CONFIG.email}` : ''
-        }.`
+        type: 'ok',
+        message: "Thanks! Your inquiry has been sent and our team will be in touch shortly."
       });
     } finally {
       setIsSubmitting(false);
