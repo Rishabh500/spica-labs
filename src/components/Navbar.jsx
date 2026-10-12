@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 import { CONFIG } from '../config';
 import './Navbar.css';
 
@@ -26,7 +26,7 @@ export function Navbar() {
     <header>
       <div className="wrap nav">
         <a className="brand" href="#home" aria-label="SpicaLabs.ai home">
-          <span className="logo" role="img" aria-label="SpicaLabs.ai" />
+            <span className="logo" role="img"></span>
         </a>
         <button
           className="menu-btn"
