@@ -71,13 +71,26 @@ export function ContactForm() {
         tools: formData.tools
       };
 
-      const response = await fetch(CONFIG.formEndpoint, {
+      // Choose the appropriate endpoint: Google Sheets Apps Script URL if provided,
+      // otherwise fall back to the legacy formEndpoint.
+      const submitUrl = CONFIG.googleSheetUrl || CONFIG.formEndpoint;
+
+      // Map fields to match the Google Sheet column headers.
+      const sheetPayload = {
+        Name: formData.name,
+        "Business email": formData.email,
+        "Company name": formData.company,
+        "What would you like to improve or automate?": formData.goal,
+        "Current tools or systems (optional)": formData.tools
+      };
+
+      const response = await fetch(submitUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json"
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(sheetPayload)
       });
 
       if (!response.ok) {
