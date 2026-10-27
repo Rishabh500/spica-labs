@@ -30,7 +30,7 @@ export function About() {
         <div>
           <h2>AI Built Around Your Business.</h2>
           <p className="lead" style={{ marginTop: '16px' }}>
-            SpicaLabs.ai is an AI solutions company for growing businesses. We start with the problem, not the technology.
+            SpicaLabs AI is an AI solutions company for growing businesses. We start with the problem, not the technology.
           </p>
         </div>
         <div className="principles">

@@ -127,7 +127,7 @@ export function ContactForm() {
     <section id="contact" style={{ paddingTop: 0 }}>
       <div className="wrap contact-grid">
         <div>
-          <h2>SpicaLabs.ai</h2>
+          <h2>SpicaLabs AI</h2>
           <p>
             <a href="https://www.termsfeed.com/live/627187e2-c536-42a7-b29c-bfe125314f85" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="https://www.termsfeed.com/live/e8463efb-03ac-4369-879c-ed669022fdd8" target="_blank" rel="noopener noreferrer">Terms of Service</a>
           </p>

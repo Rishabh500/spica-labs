@@ -1,5 +1,6 @@
 import React from 'react';
 import { CONFIG } from '../config';
+import logo from '../assets/logo-ai.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,8 +10,8 @@ export function Footer() {
       <div className="wrap">
         <div className="fgrid">
           <div>
-            <a className="brand" href="#home" aria-label="SpicaLabs.ai home">
-              <span className="logo" role="img" aria-label="SpicaLabs.ai"></span>
+            <a className="brand" href="#home" aria-label="SpicaLabs AI home">
+              <img className="logo-img footer-logo" src={logo} alt="SpicaLabs AI" />
             </a>
             <p style={{ marginTop: '14px', color: '#fff', fontWeight: 600 }}>
               AI Solutions That Work.
@@ -52,7 +53,7 @@ export function Footer() {
         </div>
 
         <p className="copy" style={{ maxWidth: 'none' }}>
-          © {currentYear} SpicaLabs.ai. All rights reserved.
+          © {currentYear} SpicaLabs AI. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,5 +1,8 @@
-.logo {
-display: block;
-  height: auto;
-  display: inline-block;
+.logo-img {
+  display: block;
+  height: 46px;
+  width: auto;
+}
+.logo-img.footer-logo {
+  height: 56px;
 }
